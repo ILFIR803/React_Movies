@@ -1,11 +1,17 @@
 import {Movie} from './Movie'
 
-export function Movies (props) {
-   const {movies} = props
-   return  <div className="movies">
-      {movies.map(movie => (
-         <Movie key={movie.imbdID } {...movie}/>
-      ))}
+ function Movies (props) {
+   const {movies = [] } = props;
+
+   return  (
+   <div className="movies">
+      { movies.length ? (
+         movies.map((movie) => <Movie key={movie.imbdID } {...movie} />)
+      ) : (
+         <h4>Noting found</h4>
+      )}
    </div>
+   );
 }
    
+export { Movies };

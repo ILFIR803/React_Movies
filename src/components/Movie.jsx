@@ -3,7 +3,8 @@ export function Movie(props) {
       Title,
       Year,
       Type,
-      Poster
+      imbdID,
+      Poster,
    } = props;
    return <div className="card">
             <div className="card-image">
@@ -16,6 +17,7 @@ export function Movie(props) {
             <div className="card-action button">
                <p>{Year}</p>
                <a href="!#"> {Type}</a>
+               <p>{imbdID}</p>
             </div>
          </div>
 

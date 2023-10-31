@@ -25,3 +25,14 @@ footer {
 .row .col.m7 {
   width: 100%;
   }
+.card-image {
+  height: 350px;
+}
+.search-btn {
+  margin-bottom: 10px;
+}
+
+.filter>label {
+  margin-right: 20px;
+ 
+}
